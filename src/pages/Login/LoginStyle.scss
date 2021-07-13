@@ -1,0 +1,69 @@
+@import "../../stylesGlobal.scss";
+@import "../../styles/mixins.scss";
+
+@media screen and (max-width: $break-width) {
+  .login-container {
+    @include BlockCenter;
+
+    width: 100%;
+    height: 100vh;
+
+    .logo-container {
+      margin-bottom: 41px;
+    }
+
+    .form-login {
+      @include BlockCenter;
+
+      gap: 20px;
+
+      .input-email {
+        @include StyleForm;
+      }
+
+      .input-senha {
+        @include StyleForm;
+      }
+    }
+
+    .separador {
+      font-size: 13px;
+      color: #a8a8b3;
+
+      margin: 32px;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        flex: 1;
+        width: 7rem;
+        height: 1px;
+        background: #a8a8b34f;
+        margin-right: 16px;
+      }
+
+      &::after {
+        content: "";
+        flex: 1;
+        width: 7rem;
+        height: 1px;
+        background: #a8a8b34f;
+        margin-left: 16px;
+      }
+    }
+
+    .footer {
+      @include Center;
+      font-family: $FontMain;
+      color: #a8a8b3;
+      top: 90%;
+      position: absolute;
+      width: 100%;
+      height: 5rem;
+      
+
+      border-top: 0.1px solid rgba(0, 0, 0, 0.082);
+    }
+  }
+}
