@@ -1,0 +1,16 @@
+@import "../../../stylesGlobal.scss";
+
+.button-login {
+  width: 17rem;
+  height: 44px;
+  border-radius: 5px;
+  background-color: $colorBlue;
+  border: none;
+  margin-top: 1.5rem;
+
+  .text-button-login {
+    font-size: $FontMain;
+    color: $colorText;
+    font: 500 bold 0.9rem;
+  }
+}
