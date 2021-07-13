@@ -1,0 +1,13 @@
+@import "../../stylesGlobal.scss";
+
+.create-account { 
+  position: relative;
+  top: 2.5,rem;
+  font-family: $FontMain;
+  color: rgba(128, 128, 128, 0.884);
+
+  .link-create-account{
+    text-decoration: none;
+    color: $colorBlue;
+  }
+}
