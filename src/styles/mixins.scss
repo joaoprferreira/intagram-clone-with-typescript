@@ -1,0 +1,23 @@
+@mixin BlockCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin Center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin StyleForm {
+  width: 17rem;
+  height: 2.75rem;
+  border-radius: 5px;
+  border: 0.5px solid rgba(0,0,0,0.1);
+  margin-bottom: 12px;
+  background:#FAFAFA;
+  box-sizing: border-box;
+  padding: 10px;
+}
